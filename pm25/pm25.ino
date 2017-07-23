@@ -10,8 +10,8 @@ extern "C" {
 #define PM25_EN 12  //拉高时接通pm2.5到ADC腿
 #define LbatEn 16  //拉高时，测量电池充电电流,采样电阻0.33欧
 #define vocEn 9 //拉高时，测量甲醛
-#define VCC_ADC 8 //拉高时接通电池电压到adc，拉高时，如果测量此腿不是高电平，则表示S4开关按下
-#define LoutEn 7 //拉高时测量充电宝输出电流
+#define VCC_ADC 5 //拉高时接通电池电压到adc，拉高时，如果测量此腿不是高电平，则表示S4开关按下
+#define LoutEn 2 //拉高时测量充电宝输出电流
 #define DHT11En 10 //温湿度数字腿
 
 #define PMLed 0 // 开pm2.5的led 跟lcd/dc复用
@@ -31,11 +31,11 @@ void setup() {
   Serial.println(__LINE__);
   OL(LbatEn);
   Serial.println(__LINE__);
-  //OL(DHT11En);
+  OL(DHT11En);
   Serial.println(__LINE__);
-  // OL(LoutEn);
+  OL(LoutEn);
   Serial.println(__LINE__);
-  //  OL(vccAdcEn);
+  OL(VCC_ADC);
   Serial.println(__LINE__);
   Serial.flush();
   LCDInit(); //Init the LCD
@@ -60,14 +60,15 @@ void loop() {
   Serial.print(((uint32_t)adc * 1000 / 1024 * 3));
   Serial.println("ma");
   Serial.println(__LINE__);
-  /*
-    OH(VCC_ADC);
-    adc=analogRead(A0);
-    OL(VCC_ADC);
-    LCDPrint("\r\n");
-    LCDPrint((uint32_t)adc*1000/1024*(4990+976)/976);
-    LCDPrint("mV");
-  */
+
+  OH(VCC_ADC);
+  adc = analogRead(A0);
+  OL(VCC_ADC);
+  gotoXY(0, 2);
+  LCDPrint("vcc=");
+  LCDPrint((uint32_t)adc * 1000 / 1024 * (4990 + 976) / 976);
+  LCDPrint("mV");
+
   OL(VCC2_EN);
   OH(PM25_EN);
   OL(PMLed);
