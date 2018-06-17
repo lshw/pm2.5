@@ -1491,19 +1491,19 @@ Element["hidename,onsolder" "3x6sw" "S2" "unknown" 62.5393mm 52.8049mm 0.0000 0.
 
 	)
 
-Element["hidename" "GP2Y1010AU0Fa" "U6" "GP2Y1010AU0F" 38.2324mm 41.5732mm -1.1621mm 1.0361mm 0 100 ""]
+Element["hidename,selected" "GP2Y1010AU0Fa" "U6" "GP2Y1010AU0F" 38.2324mm 41.5732mm -1.1621mm 1.0361mm 0 100 "selected"]
 (
 	Attribute("device" "4N25")
 	Attribute("manufacturer" "unknown")
 	Attribute("manufacturer_part_number" "unknown")
 	Attribute("vendor" "unknown")
 	Attribute("vendor_part_number" "unknown")
-	Pin[0.0000 0.0000 56.00mil 40.00mil 62.00mil 30.00mil "Vcc1" "1" ""]
-	Pin[0.0240mm -7.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "VO" "5" ""]
-	Pin[0.0240mm -5.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "GND2" "4" "thermal(0X,5X)"]
-	Pin[0.0240mm -3.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "LED" "3" ""]
-	Pin[0.0240mm -2.0500mm 56.00mil 40.00mil 62.00mil 30.00mil "GND1" "2" ""]
-	Pin[0.0240mm -9.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "Vcc2" "6" ""]
+	Pin[0.0000 0.0000 56.00mil 40.00mil 62.00mil 30.00mil "Vcc1" "1" "selected"]
+	Pin[0.0240mm -7.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "VO" "5" "selected"]
+	Pin[0.0240mm -5.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "GND2" "4" "selected,thermal(0X,5X)"]
+	Pin[0.0240mm -3.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "LED" "3" "selected"]
+	Pin[0.0240mm -2.0500mm 56.00mil 40.00mil 62.00mil 30.00mil "GND1" "2" "selected"]
+	Pin[0.0240mm -9.9500mm 56.00mil 40.00mil 62.00mil 30.00mil "Vcc2" "6" "selected"]
 	ElementLine [-17.2000mm 7.0000mm -2.2000mm 7.0000mm 0.2080mm]
 	ElementLine [-2.1740mm -39.1010mm -2.1740mm 7.0000mm 10.00mil]
 	ElementLine [-2.1740mm -39.1010mm -85.00mil -1540.00mil 10.00mil]
@@ -2970,8 +2970,8 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
-	Line[1420.00mil 1915.00mil 240.00mil 105.00mil 10.00mil 20.00mil "clearline"]
-	Line[1420.00mil 105.00mil 240.00mil 1915.00mil 10.00mil 20.00mil "clearline"]
+	Line[1420.00mil 1915.00mil 240.00mil 105.00mil 10.00mil 20.00mil "clearline,selected"]
+	Line[1420.00mil 105.00mil 240.00mil 1915.00mil 10.00mil 20.00mil "clearline,selected"]
 	Line[3035.00mil 1225.00mil 3045.00mil 1225.00mil 10.00mil 20.00mil "clearline"]
 	Line[3040.00mil 1225.00mil 3025.00mil 1225.00mil 10.00mil 20.00mil "clearline"]
 	Line[30.00mil 2330.00mil 175.00mil 2330.00mil 20.00mil 20.00mil "clearline"]
@@ -2979,7 +2979,7 @@ Layer(10 "silk")
 	Line[3520.00mil 2245.00mil 3520.00mil 2410.00mil 20.00mil 20.00mil "clearline"]
 	Line[1195.00mil 65.0050mm 1195.00mil 65.5130mm 10.00mil 20.00mil "clearline"]
 	Line[855.00mil 65.0050mm 855.00mil 65.7670mm 10.00mil 20.00mil "clearline"]
-	Text[12.6000mm 7.4000mm 0 186 "30mmX46mm" "clearline"]
+	Text[12.6000mm 7.4000mm 0 186 "30mmX46mm" "clearline,selected"]
 )
 NetList()
 (
