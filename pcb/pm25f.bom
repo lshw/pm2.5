@@ -1,0 +1,47 @@
+# PcbBOM Version 1.0
+# Date: 2018年11月12日 星期一 14时59分58秒 UTC
+# Author: 
+# Title: (unknown) - PCB BOM
+# Quantity, Description, Value, RefDes
+# --------------------------------------------
+1,"0805","4.7k",R2 
+1,"BMP180","BMP180",U8 
+1,"SMD_POLAR 240 90","SS34",D1 
+1,"0805","2.7k",R17 
+1,"QX2303L50E","QX2303L50E",U2 
+1,"USB","usb",CONN1 
+1,"SMD_POLAR 240 90","227A",C3 
+1,"0805","470",R28 
+2,"0805","10uf",C9 C7 
+1,"0805","3.3k",R27 
+6,"0805","10k",R16 R9 R3 R14 R5 R11 
+1,"EIA_B","227A",C1 
+1,"0805","1k",R25 
+7,"0805","0.1u",C5 C11 C4 C8 C12 C2 C6 
+1,"SOT26","DW01",U11 
+2,"0805","100",R24 R10 
+1,"dht11","DHT11",U7 
+2,"1206","0.33",R4 R1 
+1,"SOT26","8205a",U10 
+1,"0805","97.6k",R7 
+2,"SOT89","HT7333",U15 U17 
+5,"3x6sw","unknown",S3 S4 S5 S2 S1 
+1,"SO16","CD4051",U12 
+1,"ms1100","ms1100",U9 
+2,"Si2305","Si2305",Q2 Q6 
+1,"Si2306","Si2306",Q1 
+1,"0805","3.3M",R13 
+2,"0805","499k",R6 R15 
+1,"esp12f","esp12f",U3 
+1,"SIP6N","unknown",CONN3 
+1,"oled_0.96","unknown",U14 
+1,"SMD_POLAR 280 100","330",L1 
+1,"SIP4N","unknown",U4 
+1,"GP2Y1010AU0F","GP2Y1010AU0F",U6 
+1,"type-c","typec usb",U16 
+1,"0805","1.62k",R8 
+1,"microusb","microusb",CONN2 
+1,"LED2x","led2x",LED1 
+1,"SOT26","TP4057",U1 
+1,"MSOP10","CH340E",U5 
+1,"18650a","18650a",B1 
